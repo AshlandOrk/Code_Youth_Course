@@ -5,6 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>signup_page</title>
+    <!--create a signup page for login_page to direct new users to-->
   </head>
-  <body></body>
+  <body>
+    <!--Home button returns user to previous page-->
+    <a href="/html/Forms/login_page.html"><h2>Mycologists Anonymous</h2></a>
+
+    <form>
+      <div>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          value=""
+          placeholder="username"
+          required
+        />
+        <!--requires javascript here to check existing usernames to ensure the new username isn't taken-->
+        <br />
+        <label for="email">Email</label>
+        <input type="email" required />
+        <br />
+        <label for="pswd">Password</label>
+        <input type="password" name="pswd" value="" required />
+        <label for="pswd">Confirm Password</label>
+        <input type="password" name="pswd" value="" required />
+        <!-- javascript lanuage will be needed here to ensure the two passwords are the same-->
+        <br />
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="Female" /> Female
+        <input type="radio" name="gender" value="Male" /> Male
+        <input type="radio" name="gender" value="Non-Binary" /> Non-Binary
+        <input type="radio" name="gender" value="N/A" />N/A
+        <br />
+        <label for="pronouns">How should people refer to you?</label>
+        <input type="checkbox" name="pronouns" value="she/her" /> she/her
+        <input type="checkbox" name="pronouns" value="he/him" /> he/him
+        <input type="checkbox" name="pronouns" value="they/them" /> they/them
+        <br />
+      </div>
+      <input type="submit" value="SUBMIT" />
+      <input type="reset" value="RESET" />
+    </form>
+  </body>
 </html>
