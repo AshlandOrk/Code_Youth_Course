@@ -1,5 +1,59 @@
 /*Style sheet for the webpage practice project */
 
-/*Headers*/
+ul.navWrapper {
+  list-style-type: none;
+  margin-left: 100px;
+  padding: 0;
+  overflow: hidden;
+  background-color: red;
+}
+li {
+  display: inline;
+}
+li a.primeNavLink {
+  display: block;
+  color: white;
+  text-align: justify;
+  text-decoration: none;
+  font-weight: 300;
+}
+li a.navBarItem {
+  display: block;
+  color: white;
+  text-align: justify;
+  text-decoration: none;
+  font-weight: 300;
+}
+/*Body*/
+body.feed {
+  margin: 0;
+  font-size: 16px;
+  min-width: 20em;
+}
+/*Headings*/
+h1#headerBarHead {
+  color: white;
+  font-weight: bolder;
+}
+h3.headerText {
+  color: white;
+}
+h3.headline {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-weight: 300;
+}
 
-/*Clases*/
+/*Divs*/
+/*Header Bar Divs*/
+div.header-bar {
+  width: 3000px;
+  height: 50px;
+  border: 0px;
+  background-color: red;
+  margin-top: 60px;
+}
+/*
+div.header-bar-text {
+  text-align: center;
+}
+*/
