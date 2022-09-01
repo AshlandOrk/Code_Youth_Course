@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-identifiers</title>
+    <style>
+      .body {
+        height: 1000px;
+      }
+      .parent {
+        position: relative;
+      }
+      .static {
+        position: static;
+        left: 20px;
+        top: 20px;
+        /* border: 1px solid; */
+        width: 40%;
+        /* margin-left: 10px; */
+      }
+      .relative {
+        position: relative;
+        left: 20px;
+        top: 20px;
+        width: 40%;
+      }
+
+      .fixed {
+        position: fixed;
+        left: 20px;
+        top: 20px;
+        width: 40%;
+      }
+      .absolute {
+        position: absolute;
+        left: 50px;
+        top: 100px;
+        width: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <p>First Paragraph</p>
+      <p class="relative">Second Paragraph</p>
+      <p class="static">Third Paragraph</p>
+      <p class="fixed">Fourth Paragraph</p>
+      <p class="absolute">Fifth Paragraph</p>
+    </div>
+  </body>
+</html>
