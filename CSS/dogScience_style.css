@@ -1,0 +1,72 @@
+/* Div Layout Classes*/
+/* Created: 2022-09-01 */
+/* Links */
+body a {
+  color: royalblue;
+  text-decoration: none;
+}
+a.courseNumber {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a.forCredit {
+  color: navy;
+}
+a.listener {
+  color: royalblue;
+}
+
+/* Div Layout Elements */
+header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section {
+  display: block;
+}
+section h3 {
+  font-size: xx-large;
+  background-color: skyblue;
+  color: dodgerblue;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Images */
+img {
+  float: right;
+  position: relative;
+  margin-top: 10px;
+  width: 219px;
+  height: 245px;
+}
+
+/* Tables and Table Elements */
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+th {
+  background-color: white;
+  border: 1px solid;
+  padding: 3px 6px 3px 6px;
+  text-align: center;
+}
+td {
+  border: 1px solid;
+  padding: 3px 6px 3px 6px;
+  /* margin-right: 5px; */
+}
+
+/* Lists and List Elements */
+li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
