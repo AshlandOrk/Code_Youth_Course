@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_intro practice</title>
+    <!-- 1. find area of a circle
+   2. find 5 times of a number using assignment exponentiation operator
+    -->
+  </head>
+  <script>
+    const pi = 3.142;
+    let radius1 = 1;
+    let radius2 = 2;
+    function torus(radius1, radius2) {
+      let torusA = 4 * (pi * pi) * radius1 * radius2;
+      console.log(torusA);
+    }
+  </script>
+  <body>
+    <label for="radius1">Radius1</label>
+    <input type="number" name="radius1" />
+    <label for="radius2">Radius2</label>
+    <input type="number" name="radius2" />
+    <button onclick="torus(radius1, radius2)">Torus time</button>
+  </body>
+</html>
