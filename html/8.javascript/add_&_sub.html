@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add and Sub</title>
+  </head>
+  <body>
+    <script>
+            let sum1;
+            let number1 = prompt("Enter the first number");
+            let operator1 = prompt("Enter the operator");
+            let number2 = prompt("Enter the second number");
+
+            function Calculate(number1, operator1, number2, sum1);
+            const parsed1 = parseInt(number1);
+            const parsed2 = parseInt(number2);
+            switch (operator1) {
+              case "+":
+                sum1 = parsed1 + parsed2;
+                break;
+              case "-":
+                sum1 = parsed1 - parsed2;
+                break;
+              case "*":
+                sum1 = parsed1 * parsed2;
+                break;
+              case "/":
+                if (parsed1 == 0 || parsed2 == 0) {
+                  alert("You cannot divide by zero!");
+                  break;
+                } else {
+                  sum1 = parsed1 / parsed2;
+                  break;
+                }
+                break;
+              default:
+                alert("Something went wrong!");
+            }
+
+      function Output(number1, operator1, number2, sum1){
+      console.log(`${number1} ${operator1} ${number2} = ${sum1}`)
+      }
+
+      Calculate(number1, operator1, number2, sum1);
+      Output(number1, operator1, number2, sum1);
+    </script>
+  </body>
+</html>
