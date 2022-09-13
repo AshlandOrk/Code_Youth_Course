@@ -1,59 +1,35 @@
 /*Style sheet for the webpage practice project */
 
-ul.navWrapper {
-  list-style-type: none;
-  margin-left: 100px;
-  padding: 0;
-  overflow: hidden;
+.navBar {
+  display: flex;
   background-color: red;
-}
-li {
-  display: inline;
-}
-li a.primeNavLink {
-  display: block;
-  color: white;
-  text-align: justify;
-  text-decoration: none;
-  font-weight: 300;
-}
-li a.navBarItem {
-  display: block;
-  color: white;
-  text-align: justify;
-  text-decoration: none;
-  font-weight: 300;
-}
-/*Body*/
-body.feed {
-  margin: 0;
-  font-size: 16px;
-  min-width: 20em;
-}
-/*Headings*/
-h1#headerBarHead {
-  color: white;
-  font-weight: bolder;
-}
-h3.headerText {
-  color: white;
-}
-h3.headline {
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  font-weight: 300;
+  height: fit-content;
+  width: auto;
 }
 
-/*Divs*/
-/*Header Bar Divs*/
-div.header-bar {
-  width: 3000px;
-  height: 50px;
-  border: 0px;
+.navElement {
+  display: flex;
+  flex-direction: row;
+  color: white;
   background-color: red;
-  margin-top: 60px;
+  padding: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-/*
-div.header-bar-text {
-  text-align: center;
+.navElement a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: inherit;
+  padding: 10px;
 }
-*/
+
+.navElement a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+#currentPage {
+  background-color: white;
+  color: red;
+}
