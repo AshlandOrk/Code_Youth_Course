@@ -19,7 +19,7 @@
 //
 // 6. Create a for loop that tells you if a value is even or odd
 //
-const index = 6;
+const index = 7;
 console.log("code initialized");
 switch (index) {
   case 1:
@@ -75,12 +75,15 @@ switch (index) {
     }
     break;
   case 7:
-    for (let i = 0; i <= 20; i++) {}
-    if (i % 3 == 0 && i % 5 == 0) {
-    } else if (i % 3 == 0) {
-    } else if (i % 3 == 0) {
+    for (let i = 0; i <= 20; i++) {
+      if (i % 3 == 0 && i % 5 == 0) {
+        console.log("Fizzbuzz");
+      } else if (i % 3 == 0) {
+        console.log("Fizz");
+      } else if (i % 5 == 0) {
+        console.log("Buzz");
+      }
     }
-
     break;
 }
 console.log("end of code");
