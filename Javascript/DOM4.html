@@ -1,0 +1,55 @@
+<!-- Question 1: Create a p tag using DOM, add some text in it, then append it to the body
+
+Question 2: Create a div tag using DOM and append it to the body. Then create p tag also using DOM, add text into it, then append it into the div you just created
+
+Question 3: Create a ul tag using DOM and append it to body. Create 3 li tags using DOM, add text in them, then append them into the ul -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>First</p>
+    <p>Second</p>
+    <p>Third</p>
+
+    <button type="button" onclick="create()">Create</button>
+
+    <script>
+      function create() {
+        let p1 = document.createElement("p");
+        p1.innerHTML = "Fourth";
+        p1.id = "four";
+        console.log(p1);
+        document.body.appendChild(p1);
+      }
+
+      let div1 = document.createElement("div");
+      div1.innerHTML = "Div 1 text";
+      document.body.appendChild(div1);
+
+      let para1 = document.createElement("p");
+      para1.innerHTML = "This is the example text";
+      div1.appendChild(para1);
+
+      let testList = document.createElement("ul");
+      testList.innerText = "Test List Head";
+      document.body.appendChild(testList);
+
+      let listArray = [];
+
+      for (let i = 0; i < 3; i++) {
+        listArray[i] = document.createElement("li");
+        listArray[i].innerHTML = "List item" + i;
+        console.log("list item", i, "is registered");
+      }
+      console.log(listArray);
+
+      testList.appendChild(listArray[]);
+    </script>
+  </body>
+</html>

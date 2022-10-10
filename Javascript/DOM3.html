@@ -1,0 +1,48 @@
+<!-- 1. click of a button, colour of fruit changes to that color -->
+<!-- 2. initially heading is fruits...click of a button change it to list of fruits -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM 3</title>
+  </head>
+  <body>
+    <!-- button goes here -->
+    <ul>
+      <h1 id="listHead">Fruits</h1>
+      <li class="red">Apple</li>
+      <li class="green">Kiwi</li>
+      <li id="yellow">Banana</li>
+      <li id="orange">Orange</li>
+      <li class="red">Strawberry</li>
+      <li class="red">Pomegranet</li>
+      <li class="green">Grapes</li>
+    </ul>
+    <button type="button" id="myBtn" onclick="buttFunction()">Click Me</button>
+    <script>
+      let greenFruit = document.getElementsByClassName("green");
+      let redFruit = document.getElementsByClassName("red");
+      let yellowFruit = document.getElementById("yellow");
+      let orangeFruit = document.getElementById("orange");
+      let head = document.getElementById("listHead");
+
+      function buttFunction() {
+        for (let i = 0; i < greenFruit.length; i++) {
+          greenFruit[i].style.color = "green";
+        }
+
+        for (let i = 0; i < redFruit.length; i++) {
+          redFruit[i].style.color = "red";
+        }
+
+        yellowFruit.style.color = "yellow";
+
+        orangeFruit.style.color = "orange";
+
+        head.textContent = "List of Fruits";
+      }
+    </script>
+  </body>
+</html>

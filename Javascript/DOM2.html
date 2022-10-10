@@ -1,0 +1,110 @@
+<!-- Question 1: Create an p tag with some text in it in HTML and then select it in
+JS. Change its font size to 20px and color to blue 
+Question 2: Create an h3 tag with some text in it in HMTL and then select it in JS. 
+Change its background color to olivegreen and make it bold 
+Question 3: Create 3 p tags with some text
+in it in HTML and then select ALL of them in JS. Change the first element color
+to light blue, the second elements color to purple, and the third to orangered -->
+<!-- 4.
+    in HTML:
+    -Create an h1 tag that says MY LIST
+    -Create a list with 5 items    
+
+    in JavaScript:
+    -change the background-color of the h1 to red
+    -change the color of all list items to purple
+
+    5.
+    in HTML:
+    -Create a div with a class called parent and put a div inside it with a class called child
+
+    in JavaScript:
+    -Set the parent div to have a width of 100px and height of 100px give it a 3px border
+    -Set the child div to have a width of 50px and height of 50px give it a 1px border
+  
+    6.
+    in HTML:
+    -Create a div with 3 div inside it
+    -give the parent div the id container
+    -give the child divs the class box 
+
+    in JavaScript:
+    -Make the parent div have a width of 400px
+    -make the child divs a width of 5px and a height of 50px
+    -give the child divs margin: 25px 0px;
+    -change each child div to have a diffrent background-color -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM 2</title>
+  </head>
+
+  <body>
+    <p>Placeholder Text!</p>
+    <h3>Header Text Here!</h3>
+
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+
+    <h1 id="list1">My list</h1>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+    </ul>
+
+    <div class="parent">
+      Parent Contents
+      <div class="child">Child Contents</div>
+    </div>
+
+    <div id="container">
+      <div class="box">box 1</div>
+      <div class="box">box 2</div>
+      <div class="box">box 3</div>
+    </div>
+
+    <script>
+      let header3 = document.querySelector("h3");
+      header3.style.backgroundColor = "olive";
+      header3.style.fontWeight = "bold";
+      let paras = document.querySelectorAll("p");
+      paras[1].style.color = "lightblue";
+      paras[2].style.color = "purple";
+      paras[3].style.color = "orangered";
+      let para = document.querySelector("p");
+      para.style.fontSize = "20px";
+      para.style.color = "blue;";
+
+      let list1 = document.getElementById("list1");
+      list1.style.backgroundColor = "red";
+      let listItems = document.querySelectorAll("li");
+      for (let item of listItems) {
+        item.style.color = "purple";
+      }
+
+      let parentDiv = document.getElementsByClassName("parent");
+      let childDiv = document.getElementsByClassName("child");
+
+      parentDiv[1].style.border = "3px";
+      parentDiv[1].style.width = "100px";
+      parentDiv[1].style.height = "100px";
+
+      for (let item of childDiv) {
+        item.style.border = "1px";
+        item.style.width = "50px";
+        item.style.height = "50px";
+      }
+
+      let cont = document.getElementById("container");
+      cont.style.width = "400px";
+    </script>
+  </body>
+</html>

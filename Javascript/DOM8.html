@@ -1,0 +1,57 @@
+<!-- Question 1: Create a button in HTML. Add an event listener to it and have it so whenever the button is clicked, "Thanks for clicking" will be logged to the console
+
+Question 2: Create a p tag in HTML with some text. Add an event listener to it and have it when it is clicked, "This is a p tag" will be logged to the console
+
+Question 3: Create a p tag in HTML with some text. Add an event listener to it and have it when it is clicked, the text color will turn red. -->
+
+<!-- 4.
+        In HTML:
+        Create three(3) p tags with the text 'First', 'Second', 'Third'
+        Give all three the same class
+
+        In JavaScript:
+        -Using .addEventListener() add a click event listener
+        -console.log('Hello') using a call back function
+
+        Don't comment this out after your done, you'll need it for the next question
+
+        5.
+        Find a way to console.log() the specific element you are clicking on using the one event listener -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM8</title>
+  </head>
+  <body>
+    <button id="but1">Click Me</button>
+
+    <p class="clickableText">This is the clickable text</p>
+
+    <p id="changingText">This text changes colour when clicked.</p>
+
+    <p></p>
+    <p></p>
+    <p></p>
+  </body>
+  <script>
+    let btn = document.querySelector("#but1");
+    let cText = document.querySelector(".clickableText");
+    let colText = document.querySelector("#changingText");
+
+    btn.addEventListener("click", function () {
+      console.log("The button has been clicked!");
+    });
+
+    cText.addEventListener("click", function () {
+      console.log("The clickable text has been clicked.");
+    });
+
+    colText.addEventListener("click", function () {
+      colText.style.color = "red";
+    });
+  </script>
+</html>
