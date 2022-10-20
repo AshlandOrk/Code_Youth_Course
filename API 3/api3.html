@@ -1,0 +1,54 @@
+<!-- Using this link - https://reqres.in/api/users
+
+        /*
+        1.
+         console.log() the response you get back
+        */
+
+        /*
+        2.
+        console.log() the first name and email of the first person in the data array (george bluth)
+        */
+
+        /*
+        3.
+        console.log() the first name and last name of the fourth person in the data array (eve holt)
+        */
+
+        /*
+        4.
+        Using a loop console.log() everyones email
+        */
+
+        /*
+        Bonus
+        loop through the data array
+        console.log() the first name of anyone who's first name starts with the letter E
+        */ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const url = "https://reqres.in/api/users";
+
+      fetch(url)
+        .then((res) => {
+          console.log(res);
+          return res.json();
+        })
+        .then((data) => {
+
+
+
+            
+        });
+    </script>
+  </body>
+</html>

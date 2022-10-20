@@ -1,0 +1,90 @@
+<!-- https://dummyjson.com/products
+
+
+1. Fetching products
+2. Add to Cart
+3. display cart in table format 
+4. Add remove Item function(similar to add cart)
+5. add quantity(optional) -->
+
+<!-- https://phppot.com/javascript/javascript-shopping-cart/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/API 4/style.css" />
+    <title>API Practice 4</title>
+  </head>
+  <body>
+    <h2>Phone Store</h2>
+    <h4>Shopping cart</h4>
+    <img src="https://dummyjson.com/image/i/products/28/thumbnail.jpg" alt="" />
+    <h3>Devices</h3>
+
+    <div id="data"></div>
+
+    <script>
+      //the array containing all the items in the user's cart that they would like to buy
+      let cartArray = [];
+
+      const url = "https://dummyjson.com/products";
+
+      fetch(url)
+        .then((res) => {
+          //  console.log(res);
+          return res.json();
+        })
+        .then((data) => {
+          // console.log(data);
+          let temp = "";
+
+          for (let i = 0; i < data.products.length; i++) {
+            /// console.log(data.products[i].thumbnail);
+            temp += `<div class="item">
+                <div class="img"> <img src="${data.products[i].thumbnail}" alt="" height=200px width=200px> </div>
+                <p class="name">${data.products[i].title}</p>
+                <div class="price">$${data.products[i].price}</div>
+                <div class="info">${data.products[i].description}</div>
+                <button class="button" onclick="addToCart()">Add to cart</button>
+                </div>`;
+          }
+          document.getElementById("data").innerHTML = temp;
+        });
+      //function that adds an item to the user's shopping cart
+      function addToCart(element) {
+        const parent = element.closest("div.item");
+
+        const cartItem = {
+          name: title,
+          price: price,
+          desc: info,
+        };
+
+        let html = "";
+        cartArray.push(cartItem);
+
+        for (i = 0; i < cartArray.length; i++) {
+          html += `<div class="shopping-cart">
+<span>${cartArray[i].name}</span>
+<span>${cartArray[i].price}</span>
+<span>${cartArray[i].desc}</span>
+<button onclick="removeItem(this)>Remove Item</button>"
+</div>
+`;
+        }
+        const cart = document.querySelector(".cart");
+        cart.innerHTML = html;
+      }
+
+      //function that removes an item from the shopping cart
+      function removeItem() {
+        const itemRemove = document.querySelector(".shopping-cart");
+        console.log("rem", itemRemove);
+        itemRemove.remove();
+      }
+    </script>
+  </body>
+</html>

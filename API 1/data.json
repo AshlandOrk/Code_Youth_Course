@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Title",
+    "author": "Author",
+    "published": "Published",
+    "genre": "Genre",
+    "pages": "Pages",
+    "subjects:": "Subjects"
+  },
+  {
+    "title": "Radical Mycology",
+    "author": "Peter McCoy",
+    "published": "2020",
+    "genre": "non-fiction",
+    "pages": "672",
+    "subjects:": "Mycology, Ecology, Fungiculture, Lichenology, Recomposition"
+  },
+  {
+    "title": "Prefigurative Politics",
+    "author": "Paul Raekstad, Sofa Siao Gradin",
+    "published": "2020",
+    "genre": "non-fiction",
+    "pages": "167",
+    "subjects:": "Prefigurative Politics, Commiunity Organizing, Collective Action, History"
+  },
+  {
+    "title": "Humankind: Solidarity With Nonhuman People",
+    "author": "Timothy Morton",
+    "published": "2020",
+    "genre": "non-fiction",
+    "pages": "189",
+    "subjects:": "Ecology, Philosophy, Political Theory, Solidarity Politics, Hyperobjects"
+  },
+  {
+    "title": "A Psalm For The Wild-Built",
+    "author": "Becky Chambers",
+    "published": "2021",
+    "genre": "fiction",
+    "pages": "147",
+    "subjects:": "Solarpunk, Biopunk, Ecology, Nonhuman People"
+  },
+  {
+    "title": "A Prayer For The Crown-Shy",
+    "author": "Becky Chambers",
+    "published": "2022",
+    "genre": "fiction",
+    "pages": "152",
+    "subjects:": "Solarpunk, Biopunk, Ecology, Nonhuman People"
+  }
+]
